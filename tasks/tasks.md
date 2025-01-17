@@ -26,7 +26,16 @@ just add
 - Get the document using Postman
 
 ### Observations
-
+added using 
+add autherization 
+replace hostname with 0.0.0.0
+doc created and retrieved
+{
+    "_id": "1",
+    "_rev": "1-15d03b6aba15a752154baffff6054abc",
+    "key2": "value2",
+    "name": "ronith"
+}
 ## Task 3
 
 ### Description
