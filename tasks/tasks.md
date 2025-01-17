@@ -9,6 +9,13 @@
 
 ### Observations
 
+just add 
+  "api": {
+    "admin_interface": "0.0.0.0:4985"
+  },
+  to the config file
+
+  then add auth to the postman request
 ## Task 2
 
 ### Description
