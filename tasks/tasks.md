@@ -17,6 +17,7 @@ just add
   to the config file
 ```
   then add auth to the postman request
+  
 ## Task 2
 
 ### Description
@@ -33,7 +34,8 @@ just add
 --doc created and retrieved
 
 --
-```{
+```
+{
     "_id": "1",
     "_rev": "1-15d03b6aba15a752154baffff6054abc",
     "key2": "value2",
@@ -54,7 +56,8 @@ just add
 
 -- created a doc 
 --change the 2 parameters while creating the db 
-```{
+```
+{
   "bucket": "test",
   "name": "db1",
   "import_docs": true,
@@ -64,7 +67,8 @@ just add
 ```
 
 --pulled doc:
-```{
+```
+{
     "_id": "2",
     "_rev": "1-4ca9e6601a234d750e68c3d3d48e0def",
     "dummy": "doc"
@@ -98,6 +102,21 @@ then on updating the doc :
 ```
 
 thus prolly the 1st part changes the the 2nd part is a hash...
+
+
+**Meta and Sync Gateway Layers**
+
+The document in Couchbase has two layers of metadata:
+Meta: Couchbase-level metadata, managed by the Couchbase Server.
+Xattrs: Sync Gateway-managed metadata, specifically the _sync property.
+These layers store details like the revision history, CAS (Check-And-Set) tokens, and Sync Gateway-specific information (e.g., channels, sequence).
+
+**Revision (rev)**
+
+The rev field in the Sync Gateway (_sync.rev) represents the latest revision of the document that Sync Gateway tracks.
+The rev in the response from Sync Gateway (via Postman or API) only includes the latest revision identifier and does not expose the entire revision history to simplify client interaction.
+
+
 ## Task 5
 
 ### Description
@@ -114,4 +133,5 @@ thus prolly the 1st part changes the the 2nd part is a hash...
 ### Observations
 
 <img width="503" alt="image" src="https://github.com/user-attachments/assets/cb45e48c-6186-4219-860f-9c2086edfa15" />
+
 
