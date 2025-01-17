@@ -26,11 +26,12 @@ just add
 - Get the document using Postman
 
 ### Observations
-added using 
-add autherization 
-replace hostname with 0.0.0.0
-doc created and retrieved
-{
+--added using 
+--add autherization 
+--replace hostname with 0.0.0.0
+--doc created and retrieved
+
+--{
     "_id": "1",
     "_rev": "1-15d03b6aba15a752154baffff6054abc",
     "key2": "value2",
@@ -45,7 +46,25 @@ doc created and retrieved
 - Get the document contents using Postman
 - Delete the document using Postman
 
+
 ### Observations
+
+-- created a doc 
+--change the 2 parameters while creating the db 
+{
+  "bucket": "test",
+  "name": "db1",
+  "import_docs": true,
+  "enable_shared_bucket_access":true,
+  "num_index_replicas":0
+}
+
+--pulled doc:
+{
+    "_id": "2",
+    "_rev": "1-4ca9e6601a234d750e68c3d3d48e0def",
+    "dummy": "doc"
+}
 
 ## Task 4
 
