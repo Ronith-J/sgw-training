@@ -112,3 +112,6 @@ thus prolly the 1st part changes the the 2nd part is a hash...
 ```
 
 ### Observations
+
+<img width="503" alt="image" src="https://github.com/user-attachments/assets/cb45e48c-6186-4219-860f-9c2086edfa15" />
+
